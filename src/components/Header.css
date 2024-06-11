@@ -1,0 +1,65 @@
+/* ------ Header Section ------*/
+.header{
+    width: 80vw;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ Profile Image ------*/
+#profile_photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* ------ Name ------*/
+h2{
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: 500;
+    margin: 15px 0px 10px;
+}
+
+/* ------ About ------ */
+#about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px;
+}
+
+#about span{
+    display: flex;
+    align-items: center;
+    margin: 3px 0px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+.mini-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+}
+
+span>span{
+    padding: 0px 12px;
+}
+
+#location{
+    height: 22px;
+    width: 22px;
+}
+
+@media screen and (max-width: 768px){
+    #about span{
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+}
