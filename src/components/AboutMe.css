@@ -1,0 +1,87 @@
+/* ------- Modal Content ------- */
+.modal-content {
+    z-index: 1000;
+    position: fixed;
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px  5px 0px rgba(0, 0, 0, 0.3);
+    height: 50vh;
+    width: 80vw;
+    max-width: 560px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-spacing: 1px;
+    font-size: 0.9rem;
+    line-height: 19px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* ------ Back Button Container ------*/
+.back-button-box {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.back-button-box span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000dff;
+    word-spacing: 5px;
+}
+.back-button-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button-box button img{
+    height: 30px;
+    width: 30px;
+}
+
+/* ------ About Me Content ------*/
+.about-me-content li{
+    padding: 5px 0px;
+    word-spacing: 3px;
+    letter-spacing: 0.3px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+}
+
+
+@media screen and (max-width: 580px) {
+    .modal-content {
+        height: 80vh;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100vw !important;
+        max-width: 580px;
+        border-radius: 30px;
+        border: 1px solid #000;
+        padding: 20px 0px;
+        border: 0px;
+        transform: translate(0%, -10%);
+    }
+    .back-button-box {
+        margin-bottom: 20px;
+        padding: 0px 10px;
+    }
+    .about-me-content {
+        padding: 0px 20px;
+    }
+    .about-me-content li{
+        padding: 10px 0px;
+    }
+}
