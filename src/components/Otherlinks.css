@@ -1,0 +1,23 @@
+.otherlinks {
+    width: 80VW;
+    max-width: 480px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.otherlinks .logo-links span{
+    display: block;
+    margin: 5px 8px;
+}
+.otherlinks .logo-links img {
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+
+.otherlinks .logo-links img:hover {
+    transform: scale(1.2);
+}
